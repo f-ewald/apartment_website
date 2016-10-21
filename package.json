@@ -1,0 +1,18 @@
+{
+  "name": "vacation_home",
+  "version": "1.0.0",
+  "description": "Website.",
+  "main": "package.json",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Friedrich Ewald",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+$dark_background: #242729;
+$light-background: white;
+$standard_size: 1em;
+
+body {
+	background-color: $light-background;
+	font-size: $standard_size;
+}
+
+h1 {
+	font-size: $standard-size * 2.5;
+}
