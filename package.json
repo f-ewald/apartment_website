@@ -7,8 +7,10 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "gulp-connect": "^5.0.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "merge-stream": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
