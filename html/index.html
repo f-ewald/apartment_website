@@ -15,10 +15,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-      var d = document.createElement('div');
-      d.createTextNode('Hello World');
-    </script>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -44,65 +40,102 @@
       </div>
     </nav>
     <div class="top-image">
-      <img class="teaser-image" src="img/teaser.jpg" />
+      <a href="#">
+        <img class="teaser-image" src="img/teaser.jpg" />
+      </a>
       <button class="more-pictures btn btn-default">Fotos anzeigen</button>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
+        <div class="col-sm-offset-1 col-sm-10">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-sm-8">
               <div class="row">
-                <div class="col-lg-12">
+                <div class="col-sm-12">
                   <h1>Herzlich Willkommen</h1>
-                  <p class="serif">Herzlich Willkommen auf der Homepage. Dies ist ein statischer Willkommenstext, der ca. die halbe Seite einnimmt. Der Text ändert sich, im Gegensatz zu den unteren Blog-Einträgen nicht ständig. Er sollte unter anderem einen Hinweis auf die Kontaktanfrage enthalten und sonst einige statische Links auf die anderen Seiten.</p>
+                  <p class="serif content">Herzlich Willkommen auf der Homepage. Dies ist ein statischer Willkommenstext, der ca. die halbe Seite einnimmt. Der Text ändert sich, im Gegensatz zu den unteren Blog-Einträgen nicht ständig. Er sollte unter anderem einen Hinweis auf die Kontaktanfrage enthalten und sonst einige statische Links auf die anderen Seiten.</p>
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-4 text-center">
-                  <img src="img/img1.jpg" />
+                <div class="col-sm-4 text-center">
+                  <a href="#">
+                    <img src="img/img1.jpg" />
+                  </a>
                 </div>
-                <div class="col-lg-4 text-center">
-                  <img src="img/img2.jpg" />
+                <div class="col-sm-4 text-center">
+                  <a href="#">
+                    <img src="img/img2.jpg" />
+                  </a>
                 </div>
-                <div class="col-lg-4 text-center">
-                  <img src="img/img3.jpg" />
+                <div class="col-sm-4 text-center">
+                  <a href="#">
+                    <img src="img/img3.jpg" />
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="request-head">
-                    <p>Buchungsanfrage</p>
+                <div class="col-sm-12">
+                  <div class="request-container">
+                    <div class="request-head">
+                      <p>Buchungsanfrage</p>
+                    </div>
+                    <div class="request-body">
+                      <form action="request.php" method="POST">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label class="control-label">Ihr Vor- und Nachname</label>
+                          <input type="text" class="form-control" placeholder="Name" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label class="control-label">E-Mail Adresse</label>
+                          <input type="text" class="form-control" placeholder="max@mustermann.de" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label class="control-label">Anreise</label>
+                          <input type="text" class="form-control" placeholder="Anreise" />
+                        </div>
+                        <div class="col-sm-6">
+                          <label class="control-label">Abreise</label>
+                          <input type="text" class="form-control" placeholder="Abreise" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <input type="submit" class="form-control btn btn-danger" value="Anfrage senden" class="request_form" />
+                        </div>
+                      </div>
+                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12 request-body">
-                  <form action="request.php" method="POST">
-                    <input type="text" class="form-control" placeholder="Name" />
-                    <input type="submit" class="form-control btn btn-danger" value="Anfrage senden" class="request_form" />
-                  </form>
-                </div>
-              </div>
-              
-              
-              
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+        <hr />
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-sm-11">
             <p class="text-muted">&copy; 2016 Ferienwohnung in Trier an den Kaiserthermen</p>
+          </div>
+          <div class="col-sm-1">
+            <a href="tel://+1111"><span class="glyphicon glyphicon-earphone"></span></a>
           </div>
         </div>
       </div>
-      
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
